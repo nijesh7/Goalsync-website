@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goal Sync - New Objective</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="glass-bg"></div>
+    <div class="container">
+        <div class="form-container animate-fade-in">
+            <a href="employeeDashboard.html" class="back-link">← Back to Dashboard</a>
+            
+            <div class="form-box">
+                <div class="form-header">
+                    <h2>Sync a New Objective</h2>
+                    <p>Define your target and sync it with your progress</p>
+                </div>
+                
+                <form action="AddGoalServlet" method="POST">
+                    <div class="form-group">
+                        <label for="title">Goal Title</label>
+                        <input type="text" id="title" name="title" required placeholder="e.g., Complete Project Alpha">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <textarea id="description" name="description" rows="4" placeholder="Describe the steps to achieve this goal..."></textarea>
+                    </div>
+                    
+                    <div class="form-group animate-slide-up" style="animation-delay: 0.3s;">
+                <label for="deadline">Deadline</label>
+                <input type="date" id="deadline" name="deadline">
+            </div>
+
+            <div class="form-group animate-slide-up" style="animation-delay: 0.4s;">
+                <label for="priority">Priority Level</label>
+                <select id="priority" name="priority" required>
+                    <option value="low">Low - Routine tasks</option>
+                    <option value="medium" selected>Medium - Normal priority</option>
+                    <option value="high">High - Urgent objectives</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn-primary full-width animate-slide-up" style="animation-delay: 0.5s;">Create Goal</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

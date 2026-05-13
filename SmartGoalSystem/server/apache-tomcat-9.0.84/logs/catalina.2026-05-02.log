@@ -1,0 +1,575 @@
+02-May-2026 09:05:40.103 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.84
+02-May-2026 09:05:40.107 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 7 2023 19:27:40 UTC
+02-May-2026 09:05:40.107 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.84.0
+02-May-2026 09:05:40.108 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+02-May-2026 09:05:40.108 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+02-May-2026 09:05:40.109 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+02-May-2026 09:05:40.109 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-24
+02-May-2026 09:05:40.109 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           24.0.2+12-54
+02-May-2026 09:05:40.110 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+02-May-2026 09:05:40.110 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84
+02-May-2026 09:05:40.110 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84
+02-May-2026 09:05:40.124 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+02-May-2026 09:05:40.124 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+02-May-2026 09:05:40.124 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+02-May-2026 09:05:40.125 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+02-May-2026 09:05:40.125 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+02-May-2026 09:05:40.126 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\conf\logging.properties
+02-May-2026 09:05:40.126 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+02-May-2026 09:05:40.127 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+02-May-2026 09:05:40.128 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+02-May-2026 09:05:40.128 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+02-May-2026 09:05:40.129 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84
+02-May-2026 09:05:40.130 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=d:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84
+02-May-2026 09:05:40.131 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\temp
+02-May-2026 09:05:40.251 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.2.39] using APR version [1.7.4].
+02-May-2026 09:05:40.252 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+02-May-2026 09:05:40.253 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+02-May-2026 09:05:40.284 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+02-May-2026 09:05:40.835 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+02-May-2026 09:05:40.877 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1124] milliseconds
+02-May-2026 09:05:41.097 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+02-May-2026 09:05:41.127 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.84]
+02-May-2026 09:05:41.151 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\docs]
+02-May-2026 09:05:41.720 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\docs] has finished in [566] ms
+02-May-2026 09:05:41.722 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\examples]
+02-May-2026 09:05:44.191 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\examples] has finished in [2,469] ms
+02-May-2026 09:05:44.204 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\host-manager]
+02-May-2026 09:05:44.376 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\host-manager] has finished in [172] ms
+02-May-2026 09:05:44.384 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\manager]
+02-May-2026 09:05:44.484 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\manager] has finished in [103] ms
+02-May-2026 09:05:44.485 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\ROOT]
+02-May-2026 09:05:44.576 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\ROOT] has finished in [88] ms
+02-May-2026 09:05:44.579 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\SmartGoalSystem]
+02-May-2026 09:05:45.568 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+02-May-2026 09:05:45.585 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\SmartGoalSystem] has finished in [1,006] ms
+02-May-2026 09:05:45.592 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+02-May-2026 09:05:45.636 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [4752] milliseconds
+02-May-2026 09:12:58.741 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.84
+02-May-2026 09:12:58.745 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 7 2023 19:27:40 UTC
+02-May-2026 09:12:58.746 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.84.0
+02-May-2026 09:12:58.746 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+02-May-2026 09:12:58.747 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+02-May-2026 09:12:58.748 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+02-May-2026 09:12:58.748 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-24
+02-May-2026 09:12:58.748 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           24.0.2+12-54
+02-May-2026 09:12:58.749 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+02-May-2026 09:12:58.749 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84
+02-May-2026 09:12:58.750 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84
+02-May-2026 09:12:58.766 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+02-May-2026 09:12:58.766 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+02-May-2026 09:12:58.767 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+02-May-2026 09:12:58.767 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+02-May-2026 09:12:58.767 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+02-May-2026 09:12:58.768 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\conf\logging.properties
+02-May-2026 09:12:58.769 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+02-May-2026 09:12:58.769 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+02-May-2026 09:12:58.770 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+02-May-2026 09:12:58.771 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+02-May-2026 09:12:58.774 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84
+02-May-2026 09:12:58.775 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=d:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84
+02-May-2026 09:12:58.776 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\temp
+02-May-2026 09:12:58.786 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.2.39] using APR version [1.7.4].
+02-May-2026 09:12:58.789 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+02-May-2026 09:12:58.790 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+02-May-2026 09:12:58.807 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+02-May-2026 09:12:59.487 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+02-May-2026 09:12:59.525 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector["http-nio-8080"]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1011)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:554)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1039)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:724)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:746)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:307)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:477)
+	Caused by: java.net.BindException: Address already in use: bind
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:511)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:335)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:297)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:276)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:231)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1332)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1345)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:654)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:75)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1009)
+		... 11 more
+02-May-2026 09:12:59.536 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1166] milliseconds
+02-May-2026 09:12:59.677 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+02-May-2026 09:12:59.692 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.84]
+02-May-2026 09:12:59.723 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\docs]
+02-May-2026 09:13:00.304 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\docs] has finished in [579] ms
+02-May-2026 09:13:00.306 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\examples]
+02-May-2026 09:13:00.961 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\examples] has finished in [655] ms
+02-May-2026 09:13:00.962 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\host-manager]
+02-May-2026 09:13:01.039 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\host-manager] has finished in [77] ms
+02-May-2026 09:13:01.042 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\manager]
+02-May-2026 09:13:01.120 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\manager] has finished in [79] ms
+02-May-2026 09:13:01.122 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\ROOT]
+02-May-2026 09:13:01.175 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\ROOT] has finished in [53] ms
+02-May-2026 09:13:01.178 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\SmartGoalSystem]
+02-May-2026 09:13:02.218 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+02-May-2026 09:13:02.234 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\SmartGoalSystem] has finished in [1,056] ms
+02-May-2026 09:13:02.243 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [2700] milliseconds
+02-May-2026 09:13:02.259 SEVERE [main] org.apache.catalina.core.StandardServer.await Failed to create server shutdown socket on address [localhost] and port [8005] (base port [8005] and offset [0])
+	java.net.BindException: Address already in use: bind
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:511)
+		at java.base/sun.nio.ch.Net.bind(Net.java:500)
+		at java.base/sun.nio.ch.NioSocketImpl.bind(NioSocketImpl.java:630)
+		at java.base/java.net.ServerSocket.bind(ServerSocket.java:326)
+		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:222)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:581)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:864)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:810)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:347)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:478)
+02-May-2026 09:13:02.262 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+02-May-2026 09:13:02.265 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+02-May-2026 09:13:02.316 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+02-May-2026 09:13:02.321 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+02-May-2026 12:18:17.843 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.84
+02-May-2026 12:18:17.846 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 7 2023 19:27:40 UTC
+02-May-2026 12:18:17.847 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.84.0
+02-May-2026 12:18:17.847 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+02-May-2026 12:18:17.848 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+02-May-2026 12:18:17.848 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+02-May-2026 12:18:17.848 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-24
+02-May-2026 12:18:17.849 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           24.0.2+12-54
+02-May-2026 12:18:17.849 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+02-May-2026 12:18:17.850 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84
+02-May-2026 12:18:17.850 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84
+02-May-2026 12:18:17.872 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+02-May-2026 12:18:17.872 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+02-May-2026 12:18:17.872 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+02-May-2026 12:18:17.873 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+02-May-2026 12:18:17.873 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+02-May-2026 12:18:17.874 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\conf\logging.properties
+02-May-2026 12:18:17.875 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+02-May-2026 12:18:17.876 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+02-May-2026 12:18:17.876 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+02-May-2026 12:18:17.877 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+02-May-2026 12:18:17.878 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84
+02-May-2026 12:18:17.878 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=d:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84
+02-May-2026 12:18:17.882 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\temp
+02-May-2026 12:18:17.896 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.2.39] using APR version [1.7.4].
+02-May-2026 12:18:17.898 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+02-May-2026 12:18:17.898 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+02-May-2026 12:18:17.928 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+02-May-2026 12:18:18.823 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+02-May-2026 12:18:18.888 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1478] milliseconds
+02-May-2026 12:18:19.007 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+02-May-2026 12:18:19.010 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.84]
+02-May-2026 12:18:19.034 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\docs]
+02-May-2026 12:18:19.739 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\docs] has finished in [703] ms
+02-May-2026 12:18:19.739 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\examples]
+02-May-2026 12:18:20.425 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\examples] has finished in [686] ms
+02-May-2026 12:18:20.427 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\host-manager]
+02-May-2026 12:18:20.509 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\host-manager] has finished in [82] ms
+02-May-2026 12:18:20.510 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\manager]
+02-May-2026 12:18:20.585 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\manager] has finished in [76] ms
+02-May-2026 12:18:20.587 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\ROOT]
+02-May-2026 12:18:20.635 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\ROOT] has finished in [48] ms
+02-May-2026 12:18:20.636 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\SmartGoalSystem]
+02-May-2026 12:18:21.425 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+02-May-2026 12:18:21.439 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\SmartGoalSystem] has finished in [803] ms
+02-May-2026 12:18:21.448 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+02-May-2026 12:18:21.504 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [2606] milliseconds
+02-May-2026 12:38:56.233 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.84
+02-May-2026 12:38:56.238 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 7 2023 19:27:40 UTC
+02-May-2026 12:38:56.239 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.84.0
+02-May-2026 12:38:56.239 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+02-May-2026 12:38:56.240 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+02-May-2026 12:38:56.241 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+02-May-2026 12:38:56.242 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-24
+02-May-2026 12:38:56.242 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           24.0.2+12-54
+02-May-2026 12:38:56.243 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+02-May-2026 12:38:56.243 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84
+02-May-2026 12:38:56.244 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84
+02-May-2026 12:38:56.271 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+02-May-2026 12:38:56.274 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+02-May-2026 12:38:56.274 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+02-May-2026 12:38:56.275 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+02-May-2026 12:38:56.278 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+02-May-2026 12:38:56.279 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\conf\logging.properties
+02-May-2026 12:38:56.280 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+02-May-2026 12:38:56.281 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+02-May-2026 12:38:56.282 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+02-May-2026 12:38:56.282 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+02-May-2026 12:38:56.283 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84
+02-May-2026 12:38:56.284 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=d:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84
+02-May-2026 12:38:56.285 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\temp
+02-May-2026 12:38:56.302 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.2.39] using APR version [1.7.4].
+02-May-2026 12:38:56.302 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+02-May-2026 12:38:56.303 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+02-May-2026 12:38:56.343 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+02-May-2026 12:38:57.124 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+02-May-2026 12:38:57.176 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1581] milliseconds
+02-May-2026 12:38:57.279 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+02-May-2026 12:38:57.280 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.84]
+02-May-2026 12:38:57.296 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\docs]
+02-May-2026 12:38:57.898 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\docs] has finished in [599] ms
+02-May-2026 12:38:57.901 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\examples]
+02-May-2026 12:38:58.756 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\examples] has finished in [854] ms
+02-May-2026 12:38:58.760 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\host-manager]
+02-May-2026 12:38:58.876 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\host-manager] has finished in [115] ms
+02-May-2026 12:41:22.932 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.84
+02-May-2026 12:41:22.938 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 7 2023 19:27:40 UTC
+02-May-2026 12:41:22.938 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.84.0
+02-May-2026 12:41:22.939 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+02-May-2026 12:41:22.939 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+02-May-2026 12:41:22.940 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+02-May-2026 12:41:22.940 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-24
+02-May-2026 12:41:22.942 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           24.0.2+12-54
+02-May-2026 12:41:22.946 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+02-May-2026 12:41:22.948 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84
+02-May-2026 12:41:22.950 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84
+02-May-2026 12:41:22.961 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+02-May-2026 12:41:22.964 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+02-May-2026 12:41:22.965 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+02-May-2026 12:41:22.966 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+02-May-2026 12:41:22.967 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+02-May-2026 12:41:22.969 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\conf\logging.properties
+02-May-2026 12:41:22.970 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+02-May-2026 12:41:22.971 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+02-May-2026 12:41:22.975 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+02-May-2026 12:41:22.977 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+02-May-2026 12:41:22.978 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84
+02-May-2026 12:41:22.980 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=d:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84
+02-May-2026 12:41:22.981 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\temp
+02-May-2026 12:41:22.993 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.2.39] using APR version [1.7.4].
+02-May-2026 12:41:22.993 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+02-May-2026 12:41:22.994 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+02-May-2026 12:41:23.013 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+02-May-2026 12:41:23.621 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+02-May-2026 12:41:23.643 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector["http-nio-8080"]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1011)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:554)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1039)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:724)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:746)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:307)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:477)
+	Caused by: java.net.BindException: Address already in use: bind
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:511)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:335)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:297)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:276)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:231)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1332)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1345)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:654)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:75)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1009)
+		... 11 more
+02-May-2026 12:41:23.645 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1271] milliseconds
+02-May-2026 12:41:23.728 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+02-May-2026 12:41:23.729 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.84]
+02-May-2026 12:41:23.745 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\docs]
+02-May-2026 12:41:24.199 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\docs] has finished in [453] ms
+02-May-2026 12:41:24.200 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\examples]
+02-May-2026 12:41:24.913 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\examples] has finished in [713] ms
+02-May-2026 12:41:24.914 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\host-manager]
+02-May-2026 12:41:24.973 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\host-manager] has finished in [59] ms
+02-May-2026 12:41:24.974 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\manager]
+02-May-2026 12:41:25.036 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\manager] has finished in [62] ms
+02-May-2026 12:41:25.037 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\ROOT]
+02-May-2026 12:41:25.082 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\ROOT] has finished in [44] ms
+02-May-2026 12:41:25.083 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\SmartGoalSystem]
+02-May-2026 12:41:25.921 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+02-May-2026 12:41:25.942 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\SmartGoalSystem] has finished in [860] ms
+02-May-2026 12:41:25.952 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [2302] milliseconds
+02-May-2026 12:44:20.502 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.84
+02-May-2026 12:44:20.508 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 7 2023 19:27:40 UTC
+02-May-2026 12:44:20.508 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.84.0
+02-May-2026 12:44:20.510 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+02-May-2026 12:44:20.511 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+02-May-2026 12:44:20.512 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+02-May-2026 12:44:20.514 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-24
+02-May-2026 12:44:20.515 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           24.0.2+12-54
+02-May-2026 12:44:20.519 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+02-May-2026 12:44:20.522 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84
+02-May-2026 12:44:20.523 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84
+02-May-2026 12:44:20.544 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+02-May-2026 12:44:20.544 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+02-May-2026 12:44:20.546 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+02-May-2026 12:44:20.547 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+02-May-2026 12:44:20.547 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+02-May-2026 12:44:20.549 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\conf\logging.properties
+02-May-2026 12:44:20.550 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+02-May-2026 12:44:20.552 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+02-May-2026 12:44:20.554 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+02-May-2026 12:44:20.555 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+02-May-2026 12:44:20.556 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84
+02-May-2026 12:44:20.557 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=d:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84
+02-May-2026 12:44:20.558 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\temp
+02-May-2026 12:44:20.573 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.2.39] using APR version [1.7.4].
+02-May-2026 12:44:20.573 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+02-May-2026 12:44:20.575 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+02-May-2026 12:44:20.594 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+02-May-2026 12:44:21.480 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+02-May-2026 12:44:21.542 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector["http-nio-8080"]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1011)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:554)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1039)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:724)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:746)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:307)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:477)
+	Caused by: java.net.BindException: Address already in use: bind
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:511)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:335)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:297)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:276)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:231)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1332)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1345)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:654)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:75)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1009)
+		... 11 more
+02-May-2026 12:44:21.545 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1516] milliseconds
+02-May-2026 12:44:21.663 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+02-May-2026 12:44:21.663 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.84]
+02-May-2026 12:44:21.684 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\docs]
+02-May-2026 12:44:22.439 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\docs] has finished in [753] ms
+02-May-2026 12:44:22.453 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\examples]
+02-May-2026 12:44:23.346 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\examples] has finished in [893] ms
+02-May-2026 12:44:23.348 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\host-manager]
+02-May-2026 12:44:23.446 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\host-manager] has finished in [98] ms
+02-May-2026 12:44:23.447 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\manager]
+02-May-2026 12:44:23.539 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\manager] has finished in [92] ms
+02-May-2026 12:44:23.541 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\ROOT]
+02-May-2026 12:44:23.601 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\ROOT] has finished in [60] ms
+02-May-2026 12:44:23.602 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\SmartGoalSystem]
+02-May-2026 12:44:25.284 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+02-May-2026 12:44:25.303 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\SmartGoalSystem] has finished in [1,701] ms
+02-May-2026 12:44:25.315 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [3761] milliseconds
+02-May-2026 12:44:25.336 SEVERE [main] org.apache.catalina.core.StandardServer.await Failed to create server shutdown socket on address [localhost] and port [8005] (base port [8005] and offset [0])
+	java.net.BindException: Address already in use: bind
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:511)
+		at java.base/sun.nio.ch.Net.bind(Net.java:500)
+		at java.base/sun.nio.ch.NioSocketImpl.bind(NioSocketImpl.java:630)
+		at java.base/java.net.ServerSocket.bind(ServerSocket.java:326)
+		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:222)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:581)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:864)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:810)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:347)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:478)
+02-May-2026 12:44:25.342 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+02-May-2026 12:44:25.344 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+02-May-2026 12:44:25.402 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+02-May-2026 12:44:25.411 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+02-May-2026 12:48:57.532 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.84
+02-May-2026 12:48:57.536 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 7 2023 19:27:40 UTC
+02-May-2026 12:48:57.536 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.84.0
+02-May-2026 12:48:57.536 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+02-May-2026 12:48:57.537 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+02-May-2026 12:48:57.537 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+02-May-2026 12:48:57.538 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-24
+02-May-2026 12:48:57.538 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           24.0.2+12-54
+02-May-2026 12:48:57.538 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+02-May-2026 12:48:57.539 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84
+02-May-2026 12:48:57.539 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84
+02-May-2026 12:48:57.562 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+02-May-2026 12:48:57.562 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+02-May-2026 12:48:57.563 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+02-May-2026 12:48:57.563 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+02-May-2026 12:48:57.564 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+02-May-2026 12:48:57.564 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\conf\logging.properties
+02-May-2026 12:48:57.567 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+02-May-2026 12:48:57.567 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+02-May-2026 12:48:57.569 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+02-May-2026 12:48:57.569 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+02-May-2026 12:48:57.570 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84
+02-May-2026 12:48:57.571 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=d:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84
+02-May-2026 12:48:57.571 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\temp
+02-May-2026 12:48:57.583 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.2.39] using APR version [1.7.4].
+02-May-2026 12:48:57.584 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+02-May-2026 12:48:57.585 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+02-May-2026 12:48:57.604 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+02-May-2026 12:48:58.301 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+02-May-2026 12:48:58.332 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector["http-nio-8080"]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1011)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:554)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1039)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:724)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:746)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:307)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:477)
+	Caused by: java.net.BindException: Address already in use: bind
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:511)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:335)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:297)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:276)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:231)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1332)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1345)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:654)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:75)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1009)
+		... 11 more
+02-May-2026 12:48:58.334 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1308] milliseconds
+02-May-2026 12:48:58.430 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+02-May-2026 12:48:58.430 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.84]
+02-May-2026 12:48:58.443 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\docs]
+02-May-2026 12:48:59.001 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\docs] has finished in [556] ms
+02-May-2026 12:48:59.002 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\examples]
+02-May-2026 12:48:59.873 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\examples] has finished in [871] ms
+02-May-2026 12:48:59.874 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\host-manager]
+02-May-2026 12:48:59.949 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\host-manager] has finished in [75] ms
+02-May-2026 12:48:59.950 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\manager]
+02-May-2026 12:49:00.024 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\manager] has finished in [74] ms
+02-May-2026 12:49:00.038 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\ROOT]
+02-May-2026 12:49:00.089 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\ROOT] has finished in [53] ms
+02-May-2026 12:49:00.090 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\SmartGoalSystem]
+02-May-2026 12:49:01.271 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+02-May-2026 12:49:01.310 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\SmartGoalSystem] has finished in [1,220] ms
+02-May-2026 12:49:01.321 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [2984] milliseconds
+02-May-2026 12:49:01.338 SEVERE [main] org.apache.catalina.core.StandardServer.await Failed to create server shutdown socket on address [localhost] and port [8005] (base port [8005] and offset [0])
+	java.net.BindException: Address already in use: bind
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:511)
+		at java.base/sun.nio.ch.Net.bind(Net.java:500)
+		at java.base/sun.nio.ch.NioSocketImpl.bind(NioSocketImpl.java:630)
+		at java.base/java.net.ServerSocket.bind(ServerSocket.java:326)
+		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:222)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:581)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:864)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:810)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:347)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:478)
+02-May-2026 12:49:01.345 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+02-May-2026 12:49:01.347 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+02-May-2026 12:49:01.442 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+02-May-2026 12:49:01.456 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+02-May-2026 12:51:14.575 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.84
+02-May-2026 12:51:14.600 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 7 2023 19:27:40 UTC
+02-May-2026 12:51:14.622 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.84.0
+02-May-2026 12:51:14.625 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+02-May-2026 12:51:14.628 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+02-May-2026 12:51:14.630 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+02-May-2026 12:51:14.630 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-24
+02-May-2026 12:51:14.631 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           24.0.2+12-54
+02-May-2026 12:51:14.631 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+02-May-2026 12:51:14.632 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84
+02-May-2026 12:51:14.633 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84
+02-May-2026 12:51:14.635 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+02-May-2026 12:51:14.636 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+02-May-2026 12:51:14.638 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+02-May-2026 12:51:14.639 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+02-May-2026 12:51:14.642 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+02-May-2026 12:51:14.644 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\conf\logging.properties
+02-May-2026 12:51:14.646 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+02-May-2026 12:51:14.646 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+02-May-2026 12:51:14.647 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+02-May-2026 12:51:14.648 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+02-May-2026 12:51:14.649 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84
+02-May-2026 12:51:14.650 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=d:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84
+02-May-2026 12:51:14.650 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\temp
+02-May-2026 12:51:14.669 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.2.39] using APR version [1.7.4].
+02-May-2026 12:51:14.673 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+02-May-2026 12:51:14.674 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+02-May-2026 12:51:14.695 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+02-May-2026 12:51:15.589 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+02-May-2026 12:51:15.689 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1515] milliseconds
+02-May-2026 12:51:15.820 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+02-May-2026 12:51:15.821 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.84]
+02-May-2026 12:51:15.844 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\docs]
+02-May-2026 12:51:16.622 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\docs] has finished in [776] ms
+02-May-2026 12:51:16.634 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\examples]
+02-May-2026 12:51:18.415 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\examples] has finished in [1,787] ms
+02-May-2026 12:51:18.441 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\host-manager]
+02-May-2026 12:51:18.731 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\host-manager] has finished in [290] ms
+02-May-2026 12:51:18.767 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\manager]
+02-May-2026 12:51:19.377 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\manager] has finished in [610] ms
+02-May-2026 12:51:19.476 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\ROOT]
+02-May-2026 12:51:19.790 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\ROOT] has finished in [314] ms
+02-May-2026 12:51:19.865 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\SmartGoalSystem]
+02-May-2026 12:51:23.494 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+02-May-2026 12:51:23.518 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\SmartGoalSystem] has finished in [3,654] ms
+02-May-2026 12:51:23.527 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+02-May-2026 12:51:23.607 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [7901] milliseconds
+02-May-2026 13:53:45.320 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.84
+02-May-2026 13:53:45.324 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 7 2023 19:27:40 UTC
+02-May-2026 13:53:45.325 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.84.0
+02-May-2026 13:53:45.325 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+02-May-2026 13:53:45.325 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+02-May-2026 13:53:45.325 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+02-May-2026 13:53:45.326 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-24
+02-May-2026 13:53:45.326 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           24.0.2+12-54
+02-May-2026 13:53:45.327 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+02-May-2026 13:53:45.327 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84
+02-May-2026 13:53:45.327 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84
+02-May-2026 13:53:45.346 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+02-May-2026 13:53:45.348 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+02-May-2026 13:53:45.348 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+02-May-2026 13:53:45.348 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+02-May-2026 13:53:45.348 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+02-May-2026 13:53:45.349 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\conf\logging.properties
+02-May-2026 13:53:45.350 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+02-May-2026 13:53:45.351 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+02-May-2026 13:53:45.351 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+02-May-2026 13:53:45.352 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+02-May-2026 13:53:45.353 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84
+02-May-2026 13:53:45.353 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=d:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84
+02-May-2026 13:53:45.354 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\temp
+02-May-2026 13:53:45.486 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.2.39] using APR version [1.7.4].
+02-May-2026 13:53:45.487 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+02-May-2026 13:53:45.488 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+02-May-2026 13:53:45.504 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+02-May-2026 13:53:46.177 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+02-May-2026 13:53:46.223 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1307] milliseconds
+02-May-2026 13:53:46.318 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+02-May-2026 13:53:46.320 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.84]
+02-May-2026 13:53:46.336 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\docs]
+02-May-2026 13:53:46.884 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\docs] has finished in [546] ms
+02-May-2026 13:53:46.885 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\examples]
+02-May-2026 13:53:48.016 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\examples] has finished in [1,131] ms
+02-May-2026 13:53:48.019 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\host-manager]
+02-May-2026 13:53:48.096 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\host-manager] has finished in [77] ms
+02-May-2026 13:53:48.098 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\manager]
+02-May-2026 13:53:48.170 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\manager] has finished in [71] ms
+02-May-2026 13:53:48.170 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\ROOT]
+02-May-2026 13:53:48.220 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\ROOT] has finished in [50] ms
+02-May-2026 13:53:48.222 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\SmartGoalSystem]
+02-May-2026 13:53:49.209 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+02-May-2026 13:53:49.231 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SVAC MAIN 2\SmartGoalSystem\server\apache-tomcat-9.0.84\webapps\SmartGoalSystem] has finished in [1,008] ms
+02-May-2026 13:53:49.241 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+02-May-2026 13:53:49.291 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [3061] milliseconds

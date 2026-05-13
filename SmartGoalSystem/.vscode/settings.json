@@ -1,0 +1,6 @@
+{
+    "java.project.referencedLibraries": [
+        "webapp/WEB-INF/lib/*.jar",
+        "server/apache-tomcat-9.0.84/lib/*.jar"
+    ]
+}

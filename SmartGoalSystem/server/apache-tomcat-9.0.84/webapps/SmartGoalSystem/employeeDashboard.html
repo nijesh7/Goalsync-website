@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goal Sync - Employee Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="glass-bg"></div>
+    
+    <div class="layout-with-sidebar">
+        <!-- Sidebar -->
+        <aside class="sidebar animate-fade-in">
+            <div class="sidebar-brand">Goal Sync</div>
+            <nav class="sidebar-nav">
+                <a href="employeeDashboard.html" class="nav-item active"><span>Dashboard</span></a>
+                <a href="ViewGoalServlet" class="nav-item"><span>My Goals</span></a>
+                <a href="addGoal.html" class="nav-item"><span>New Goal</span></a>
+                <a href="ViewAssignmentServlet" class="nav-item"><span>Assignments</span></a>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="LogoutServlet" class="nav-item" style="color: var(--danger);"><span>Logout</span></a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="dashboard-header animate-fade-in">
+                <div class="header-content">
+                    <div class="greeting-section">
+                        <div class="greeting-text" id="greeting-text">Welcome back!</div>
+                        <div class="digital-clock" id="digital-clock">00:00:00</div>
+                    </div>
+                    <h1>Employee Dashboard</h1>
+                    <p>Sync your goals and track your success.</p>
+                </div>
+            </div>
+
+            <div class="stats-grid animate-fade-in">
+                <div class="stat-card productivity-card">
+                    <div class="productivity-score-container">
+                        <div class="score-circle">
+                            <svg viewBox="0 0 100 100">
+                                <defs>
+                                    <linearGradient id="score-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="var(--primary)" />
+                                        <stop offset="100%" stop-color="var(--secondary)" />
+                                    </linearGradient>
+                                </defs>
+                                <circle class="bg" cx="50" cy="50" r="45"></circle>
+                                <circle class="progress" id="score-progress" cx="50" cy="50" r="45"></circle>
+                            </svg>
+                            <div class="score-value" id="score-value">0%</div>
+                        </div>
+                        <span class="label">Productivity Score</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <span class="value" id="stat-total">0</span>
+                    <span class="label">Total Goals</span>
+                </div>
+                <div class="stat-card">
+                    <span class="value" id="stat-inprogress" style="color: var(--info);">0</span>
+                    <span class="label">In Progress</span>
+                </div>
+                <div class="stat-card">
+                    <span class="value" id="stat-completed" style="color: var(--success);">0</span>
+                    <span class="label">Completed</span>
+                </div>
+            </div>
+
+            <div class="dashboard-cards">
+                <div class="card animate-slide-up" style="animation-delay: 0.1s;">
+                    <div class="card-icon">🎯</div>
+                    <h3>My Goals</h3>
+                    <p>Track and manage your personal objectives.</p>
+                    <a href="ViewGoalServlet" class="btn-primary">View Goals</a>
+                </div>
+                
+                <div class="card animate-slide-up" style="animation-delay: 0.2s;">
+                    <div class="card-icon">📋</div>
+                    <h3>My Tasks</h3>
+                    <p>View assignments from your manager.</p>
+                    <a href="ViewAssignmentServlet" class="btn-info">View Tasks</a>
+                </div>
+
+                <div class="quote-card animate-slide-up" style="animation-delay: 0.3s;">
+                    <div class="quote-text" id="quote-text">"Success is not final; failure is not fatal: It is the courage to continue that counts."</div>
+                    <div class="quote-author" id="quote-author">— Winston Churchill</div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <a href="addGoal.html" class="fab-add" title="Quick Add Goal">+</a>
+
+    <script>
+        // Quotes Data
+        const quotes = [
+            { text: "The secret of getting ahead is getting started.", author: "Mark Twain" },
+            { text: "It always seems impossible until it's done.", author: "Nelson Mandela" },
+            { text: "Productivity is being able to do things that you were never able to do before.", author: "Franz Kafka" },
+            { text: "Focus on being productive instead of busy.", author: "Tim Ferriss" },
+            { text: "Your talent determines what you can do. Your motivation determines how much you are willing to do.", author: "Lou Holtz" }
+        ];
+
+        function updateGreeting(name) {
+            const hour = new Date().getHours();
+            let greeting = "Welcome back";
+            if (hour < 12) greeting = "Good Morning";
+            else if (hour < 18) greeting = "Good Afternoon";
+            else greeting = "Good Evening";
+            
+            document.getElementById('greeting-text').innerText = `${greeting}, ${name || 'User'}! 👋`;
+        }
+
+        function updateClock() {
+            const now = new Date();
+            document.getElementById('digital-clock').innerText = now.toLocaleTimeString();
+        }
+
+        setInterval(updateClock, 1000);
+        updateClock();
+
+        // Set random quote
+        const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+        document.getElementById('quote-text').innerText = `"${randomQuote.text}"`;
+        document.getElementById('quote-author').innerText = `— ${randomQuote.author}`;
+
+        fetch('DashboardStatsServlet')
+            .then(res => res.json())
+            .then(data => {
+                document.getElementById('stat-total').innerText = data.total;
+                document.getElementById('stat-inprogress').innerText = data.inProgress;
+                document.getElementById('stat-completed').innerText = data.completed;
+                
+                updateGreeting(data.userName);
+
+                // Calculate Score
+                const score = data.total > 0 ? Math.round((data.completed / data.total) * 100) : 0;
+                document.getElementById('score-value').innerText = score + '%';
+                
+                // Update Progress Circle
+                const circle = document.getElementById('score-progress');
+                const radius = circle.r.baseVal.value;
+                const circumference = 2 * Math.PI * radius;
+                const offset = circumference - (score / 100) * circumference;
+                circle.style.strokeDasharray = `${circumference}`;
+                circle.style.strokeDashoffset = offset;
+            })
+            .catch(err => console.error('Error fetching stats:', err));
+    </script>
+</body>
+</html>

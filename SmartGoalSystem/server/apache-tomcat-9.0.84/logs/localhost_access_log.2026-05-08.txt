@@ -1,0 +1,5 @@
+0:0:0:0:0:0:0:1 - - [08/May/2026:07:51:48 +0530] "GET /SmartGoalSystem/login.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [08/May/2026:07:51:48 +0530] "GET /SmartGoalSystem/css/style.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [08/May/2026:07:51:53 +0530] "POST /SmartGoalSystem/LoginServlet HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [08/May/2026:07:51:53 +0530] "GET /SmartGoalSystem/managerDashboard.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [08/May/2026:07:51:54 +0530] "GET /SmartGoalSystem/DashboardStatsServlet HTTP/1.1" 200 121

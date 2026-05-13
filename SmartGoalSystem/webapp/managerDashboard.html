@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goal Sync - Manager Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="glass-bg"></div>
+    
+    <div class="layout-with-sidebar">
+        <!-- Sidebar -->
+        <aside class="sidebar animate-fade-in">
+            <div class="sidebar-brand">Goal Sync</div>
+            <nav class="sidebar-nav">
+                <a href="managerDashboard.html" class="nav-item active"><span>Dashboard</span></a>
+                <a href="ViewGoalServlet" class="nav-item"><span>All Goals</span></a>
+                <a href="EmployeeListServlet" class="nav-item"><span>Assign Task</span></a>
+                <a href="ViewAssignmentServlet" class="nav-item"><span>Given Tasks</span></a>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="LogoutServlet" class="nav-item" style="color: var(--danger);"><span>Logout</span></a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="dashboard-header animate-fade-in">
+                <div class="header-content">
+                    <div class="greeting-section">
+                        <div class="greeting-text" id="greeting-text">Welcome back!</div>
+                        <div class="digital-clock" id="digital-clock">00:00:00</div>
+                    </div>
+                    <h1>Manager Dashboard</h1>
+                    <p>Overview of team performance and synced goals.</p>
+                </div>
+            </div>
+
+            <div class="stats-grid animate-fade-in">
+                <div class="stat-card productivity-card">
+                    <div class="productivity-score-container">
+                        <div class="score-circle">
+                            <svg viewBox="0 0 100 100">
+                                <defs>
+                                    <linearGradient id="score-gradient-mgr" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="var(--primary)" />
+                                        <stop offset="100%" stop-color="var(--secondary)" />
+                                    </linearGradient>
+                                </defs>
+                                <circle class="bg" cx="50" cy="50" r="45"></circle>
+                                <circle class="progress" id="score-progress" cx="50" cy="50" r="45"></circle>
+                            </svg>
+                            <div class="score-value" id="score-value">0%</div>
+                        </div>
+                        <span class="label">Team Productivity</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <span class="value" id="stat-total">0</span>
+                    <span class="label">Team Goals</span>
+                </div>
+                <div class="stat-card">
+                    <span class="value" id="stat-inprogress" style="color: var(--info);">0</span>
+                    <span class="label">In Progress</span>
+                </div>
+                <div class="stat-card">
+                    <span class="value" id="stat-completed" style="color: var(--success);">0</span>
+                    <span class="label">Completed</span>
+                </div>
+            </div>
+
+            <div class="dashboard-cards">
+                <div class="card animate-slide-up" style="animation-delay: 0.1s;">
+                    <div class="card-icon">📊</div>
+                    <h3>Monitor Goals</h3>
+                    <p>View all employee goals and their progress.</p>
+                    <a href="ViewGoalServlet" class="btn-primary">View All Goals</a>
+                </div>
+                
+                <div class="card animate-slide-up" style="animation-delay: 0.2s;">
+                    <div class="card-icon">📝</div>
+                    <h3>Assign Tasks</h3>
+                    <p>Give new assignments to specific employees.</p>
+                    <a href="EmployeeListServlet" class="btn-success">Assign Task</a>
+                </div>
+            </div>
+
+            <!-- Leaderboard -->
+            <div class="leaderboard-card animate-slide-up" style="animation-delay: 0.4s;">
+                <div class="leaderboard-title">🏆 Top Performers</div>
+                <div class="leaderboard-list" id="leaderboard-list">
+                    <!-- Dynamic leaderboard items -->
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        function updateGreeting(name) {
+            const hour = new Date().getHours();
+            let greeting = "Welcome back";
+            if (hour < 12) greeting = "Good Morning";
+            else if (hour < 18) greeting = "Good Afternoon";
+            else greeting = "Good Evening";
+            
+            document.getElementById('greeting-text').innerText = `${greeting}, ${name || 'Manager'}! 👋`;
+        }
+
+        function updateClock() {
+            const now = new Date();
+            document.getElementById('digital-clock').innerText = now.toLocaleTimeString();
+        }
+
+        setInterval(updateClock, 1000);
+        updateClock();
+
+        fetch('DashboardStatsServlet')
+            .then(res => res.json())
+            .then(data => {
+                document.getElementById('stat-total').innerText = data.total;
+                document.getElementById('stat-inprogress').innerText = data.inProgress;
+                document.getElementById('stat-completed').innerText = data.completed;
+
+                updateGreeting(data.userName);
+
+                // Calculate Score
+                const score = data.total > 0 ? Math.round((data.completed / data.total) * 100) : 0;
+                document.getElementById('score-value').innerText = score + '%';
+                
+                // Update Progress Circle
+                const circle = document.getElementById('score-progress');
+                const radius = circle.r.baseVal.value;
+                const circumference = 2 * Math.PI * radius;
+                const offset = circumference - (score / 100) * circumference;
+                circle.style.strokeDasharray = `${circumference}`;
+                circle.style.strokeDashoffset = offset;
+
+                if (data.leaderboard) {
+                    const list = document.getElementById('leaderboard-list');
+                    list.innerHTML = data.leaderboard.map((item, index) => `
+                        <div class="leaderboard-item">
+                            <div class="leaderboard-rank">${index + 1}</div>
+                            <div class="leaderboard-name">${item.name}</div>
+                            <div class="leaderboard-count">${item.count} Goals Done</div>
+                        </div>
+                    `).join('');
+                }
+            })
+            .catch(err => console.error('Error fetching stats:', err));
+    </script>
+</body>
+</html>
