@@ -132,6 +132,13 @@ public class ViewGoalServlet extends HttpServlet {
                         out.println("<input type='checkbox' " + (m.getIsCompleted() == 1 ? "checked" : "") + " onchange='this.form.submit()'>");
                         out.println("</form>");
                         out.println("<span>" + m.getDescription() + "</span>");
+                        
+                        // Delete Milestone icon
+                        out.println("<form action='DeleteMilestoneServlet' method='post' style='display:inline; margin-left: auto;'>");
+                        out.println("<input type='hidden' name='milestoneId' value='" + m.getMilestoneId() + "'>");
+                        out.println("<span class='milestone-delete' onclick='if(confirm(\"Delete this milestone?\")) this.parentElement.submit()'>🗑️</span>");
+                        out.println("</form>");
+                        
                         out.println("</div>");
                     }
                     out.println("</div>");
@@ -145,7 +152,26 @@ public class ViewGoalServlet extends HttpServlet {
                 out.println("</form>");
                 
                 out.println("</td>");
-                out.println("<td style='color: var(--text-muted);'>" + g.getDescription() + "</td>");
+                out.println("<td style='color: var(--text-muted);'>" + g.getDescription());
+                
+                // Manager Notes Display
+                if (g.getManagerNotes() != null && !g.getManagerNotes().isEmpty()) {
+                    out.println("<div style='margin-top:10px; padding:10px; background:rgba(99, 102, 241, 0.05); border-left:4px solid var(--primary); border-radius:8px;'>");
+                    out.println("<strong style='font-size:0.7rem; color:var(--primary); text-transform:uppercase; letter-spacing:1px;'>Manager Feedback</strong>");
+                    out.println("<p style='font-size:0.9rem; margin-top:5px; color:var(--text-main); line-height:1.4;'>" + g.getManagerNotes() + "</p>");
+                    out.println("</div>");
+                }
+                
+                // Manager Notes Form (only for managers)
+                if ("manager".equals(role)) {
+                    out.println("<form action='UpdateGoalNotesServlet' method='post' style='margin-top:12px; display:flex; flex-direction:column; gap:8px;'>");
+                    out.println("<input type='hidden' name='goalId' value='" + g.getGoalId() + "'>");
+                    out.println("<input type='hidden' name='employeeId' value='" + g.getUserId() + "'>");
+                    out.println("<textarea name='managerNotes' placeholder='Add manager feedback...' style='width:100%; padding:10px; font-size:0.85rem; border-radius:10px; border:1px dashed var(--glass-border); background:rgba(255,255,255,0.02); color:white; min-height:70px; resize:vertical;'>" + (g.getManagerNotes() != null ? g.getManagerNotes() : "") + "</textarea>");
+                    out.println("<button type='submit' class='btn-info' style='padding:6px 12px; font-size:0.8rem; align-self:flex-start;'>Save Notes</button>");
+                    out.println("</form>");
+                }
+                out.println("</td>");
                 
                 // Deadline and Countdown
                 String deadlineStr = g.getDeadline();
@@ -163,10 +189,16 @@ public class ViewGoalServlet extends HttpServlet {
                 out.println("<td><span class='priority-badge " + g.getPriority() + "'>" + g.getPriority().toUpperCase() + "</span></td>");
                 out.println("<td><span class='badge " + g.getStatus() + "'>" + g.getStatus().replace("_", " ") + "</span></td>");
                 
-                // Progress calculation
+                // Progress calculation based on milestones
                 int percent = 0;
-                if ("in_progress".equals(g.getStatus())) percent = 50;
-                else if ("completed".equals(g.getStatus())) percent = 100;
+                if (!milestones.isEmpty()) {
+                    long completedCount = milestones.stream().filter(m -> m.getIsCompleted() == 1).count();
+                    percent = (int) Math.round(((double) completedCount / milestones.size()) * 100);
+                } else {
+                    // Fallback to basic status if no milestones
+                    if ("in_progress".equals(g.getStatus())) percent = 50;
+                    else if ("completed".equals(g.getStatus())) percent = 100;
+                }
                 
                 out.println("<td>");
                 out.println("<div class='progress-container'>");

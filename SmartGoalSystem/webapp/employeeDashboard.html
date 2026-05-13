@@ -6,6 +6,7 @@
     <title>Goal Sync - Employee Dashboard</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="js/main.js" defer></script>
 </head>
 <body>
     <div class="glass-bg"></div>
@@ -21,7 +22,13 @@
                 <a href="ViewAssignmentServlet" class="nav-item"><span>Assignments</span></a>
             </nav>
             <div class="sidebar-footer">
-                <a href="LogoutServlet" class="nav-item" style="color: var(--danger);"><span>Logout</span></a>
+                <div class="theme-toggle" onclick="toggleTheme()">
+                    <span>🌓 Mode</span>
+                    <div class="toggle-track">
+                        <div class="toggle-thumb"></div>
+                    </div>
+                </div>
+                <a href="LogoutServlet" class="nav-item" style="color: var(--danger); margin-top: 10px;"><span>Logout</span></a>
             </div>
         </aside>
 
@@ -33,8 +40,21 @@
                         <div class="greeting-text" id="greeting-text">Welcome back!</div>
                         <div class="digital-clock" id="digital-clock">00:00:00</div>
                     </div>
-                    <h1>Employee Dashboard</h1>
-                    <p>Sync your goals and track your success.</p>
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <div>
+                            <h1>Employee Dashboard</h1>
+                            <p>Sync your goals and track your success.</p>
+                        </div>
+                        <div class="notification-bell" onclick="toggleNotifications()">
+                            🔔 <span class="notification-badge" id="notification-badge" style="display:none;">0</span>
+                            <div class="notification-dropdown" id="notification-dropdown">
+                                <div class="notification-header">Notifications</div>
+                                <div class="notification-list" id="notification-list">
+                                    <div style="padding:20px; text-align:center;">Loading...</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 

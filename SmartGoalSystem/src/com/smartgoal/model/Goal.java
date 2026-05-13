@@ -9,11 +9,12 @@ public class Goal {
     private String status;
     private String priority;
     private String createdAt;
+    private String managerNotes;
 
     public Goal() {}
 
     public Goal(int goalId, int userId, String title, String description,
-                String deadline, String status, String priority, String createdAt) {
+                String deadline, String status, String priority, String createdAt, String managerNotes) {
         this.goalId      = goalId;
         this.userId      = userId;
         this.title       = title;
@@ -22,6 +23,7 @@ public class Goal {
         this.status      = status;
         this.priority    = priority;
         this.createdAt   = createdAt;
+        this.managerNotes = managerNotes;
     }
 
     public int    getGoalId()                    { return goalId; }
@@ -47,4 +49,7 @@ public class Goal {
 
     public String getCreatedAt()                 { return createdAt; }
     public void   setCreatedAt(String createdAt) { this.createdAt = createdAt; }
+
+    public String getManagerNotes()                     { return managerNotes; }
+    public void   setManagerNotes(String managerNotes) { this.managerNotes = managerNotes; }
 }

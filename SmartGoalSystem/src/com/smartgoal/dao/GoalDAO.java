@@ -8,6 +8,22 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class GoalDAO {
+    
+    public GoalDAO() {
+        ensureNotesColumnExists();
+    }
+
+    private void ensureNotesColumnExists() {
+        String sql = "BEGIN " +
+                     "   EXECUTE IMMEDIATE 'ALTER TABLE goals ADD manager_notes VARCHAR2(500)'; " +
+                     "EXCEPTION WHEN OTHERS THEN NULL; END;";
+        try (Connection con = DBConnection.getConnection();
+             Statement st = con.createStatement()) {
+            st.execute(sql);
+        } catch (SQLException e) {
+            // Column probably already exists
+        }
+    }
 
     /** Insert a new goal; returns generated goal_id or -1. */
     public int addGoal(Goal goal) {
@@ -122,6 +138,20 @@ public class GoalDAO {
         return false;
     }
 
+    public boolean updateManagerNotes(int goalId, String notes) {
+        String sql = "UPDATE goals SET manager_notes = ? WHERE goal_id = ?";
+        try (Connection con = DBConnection.getConnection();
+             PreparedStatement ps = con.prepareStatement(sql)) {
+
+            ps.setString(1, notes);
+            ps.setInt(2, goalId);
+            return ps.executeUpdate() > 0;
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return false;
+    }
+
     /** Deletes a goal by ID. */
     public boolean deleteGoal(int goalId) {
         String sql = "DELETE FROM goals WHERE goal_id = ?";
@@ -167,6 +197,14 @@ public class GoalDAO {
         g.setPriority(rs.getString("priority"));
         Timestamp ts = rs.getTimestamp("created_at");
         g.setCreatedAt(ts != null ? ts.toString() : "");
+        
+        // Handle optional manager_notes
+        try {
+            g.setManagerNotes(rs.getString("manager_notes"));
+        } catch (SQLException e) {
+            g.setManagerNotes("");
+        }
+        
         return g;
     }
 }

@@ -34,6 +34,10 @@ public class AssignmentServlet extends HttpServlet {
         
         int result = assignmentDAO.addAssignment(a);
         
+        if (result > 0) {
+            new NotificationDAO().addNotification(employeeId, "Manager assigned you a new task: " + (task.length() > 50 ? task.substring(0, 47) + "..." : task));
+        }
+        
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
         
